@@ -22,7 +22,7 @@ jobs:
       run: |
         # 央视源
         rm -f CCTV.m3u && touch CCTV.m3u
-        wget https://gitee.com/cjcq/cc/raw/master/zhuanv6.m3u -O CCTV.m3u && sed -i -n '/央视/,+1p' CCTV1.m3u
+        wget https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u && sed -i -n '/央视/,+1p' CCTV1.m3u
         wget https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv6.m3u -O CNTV2.m3u && sed -i -n '/央视/,+1p' CCTV2.m3u
         wget https://raw.githubusercontent.com/ssili126/hebei/refs/heads/main/itv_all.m3u -O CNTV3.m3u && sed -i -n '/央视/,+1p' CCTV3.m3u
         cat CCTV1.m3u >> CCTV.m3u
@@ -34,7 +34,7 @@ jobs:
        
         # 卫视源
         rm -f CNTV.m3u && touch CNTV.m3u
-        wget https://gitee.com/cjcq/cc/raw/master/zhuanv6.m3u -O CNTV1.m3u && sed -i -n '/卫视/,+1p' CNTV1.m3u
+        wget https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u -O CNTV1.m3u && sed -i -n '/卫视/,+1p' CNTV1.m3u
         wget https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv6.m3u -O CNTV2.m3u && sed -i -n '/卫视/,+1p' CNTV2.m3u
         wget https://raw.githubusercontent.com/ssili126/hebei/refs/heads/main/itv_all.m3u -O CNTV3.m3u && sed -i -n '/卫视/,+1p' CNTV3.m3u
         cat CNTV1.m3u >> CNTV.m3u
